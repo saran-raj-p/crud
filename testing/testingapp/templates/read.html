@@ -1,0 +1,19 @@
+<form method="POST" action="/read/">
+    {% csrf_token %}
+{{form}}
+<br>
+<br>
+<input type="submit">
+</form>
+<br>
+<br>
+<table>
+    <tr>
+        <th>ROll Number<th/>
+        <th>Name<th/>
+    </tr>
+    <tr>
+        <td>{{student.roll}}</td>
+        <td>{{student.name}}</td>
+    </tr>
+</table>
